@@ -7,11 +7,11 @@ As the banking industry is well regulated, it is easier to ensure that these are
 
 Voting is dependant upon one's voting card. This consists of voting area and 
 
-#Two factor Authntication for the website and app
+# Two factor Authntication for the website and app
 
-#App to 
+# App to 
 
-#Azure Key Vault
+# Azure Key Vault
 
-#Azure Blockchain Workstation
+# Azure Blockchain Workstation
 
