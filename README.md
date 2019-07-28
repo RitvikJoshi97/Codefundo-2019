@@ -1,17 +1,15 @@
 # Codefundo++ 2019
-Use Azure key vault which will allow the user to securely enter into a 'Codefundo-making-voting-fun' (CMVF) website and will act as a third party to remember the personal key and public keys. This will ensure the person 'logining-in' is actually the person who is should be voting. 
-This Azure key vault can be logged in through the pre-existing bank account linked email addresses. This reduces the need for physical voting cards by reducing them to bank accounts. 
-The person's identity is now only linked through the PAN card. This PAN card is linked to your bank account, which is linked to one's 'CMVF'. 
-As the banking industry is well regulated, it is easier to ensure that these are actual citizens compared to the 
+Voting in India is dependant upon one's voting card. This consists of voting area and voting ID number. These will be used to keep pre-existing systems partially in place to increase redundancies. 
 
+## App and website
+Use a Azure Active Directory OAuth2 authentication to access account with the person's details including voter ID card number to cast vote. 
+This app can be used to give information about the different people standing for elections and the party they are associated to. 
+This app would be a Flutter app, which can be scaled to Android and iOS easily. 
+Each account would be allowed to vote for only one party. 
+(This model assumes that everyone either has a smartphone or has access to one.)
 
-Voting is dependant upon one's voting card. This consists of voting area and 
+## Azure Key Vault
+Use Azure Key Vault to link each account with the private and public keys. This will be used to link to an Etherum network.  
 
-# Two factor Authntication for the website and app
-
-# App to 
-
-# Azure Key Vault
-
-# Azure Blockchain Workstation
-
+## Azure Blockchain Workstation
+We use the Etherum network with the help of the Azure Blockchain Workstation to easily deploy it. We use each account as a Etherum user. Each account will ensure the vote of other accounts is done once, if not, then the ledger will remove the account's data completely and will add it later when another cycle comes up. After the voting period is over, the ledgers would be used to count the votes and thus give the accurate result, where no one could have tampered with it. 
